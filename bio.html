@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XIK | Bio</title>
+  <style>
+    @keyframes backgroundFade {
+      0%, 100% {
+        background-color: #000;
+      }
+      50% {
+        background-color: #1a1a1a;
+      }
+    }
+
+    @keyframes borderGlow {
+      0% {
+        border-color: #ff0000;
+        box-shadow: 0 0 5px #ff0000;
+      }
+      50% {
+        border-color: #ff5555;
+        box-shadow: 0 0 15px #ff5555;
+      }
+      100% {
+        border-color: #ff0000;
+        box-shadow: 0 0 5px #ff0000;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      animation: backgroundFade 6s infinite;
+      color: #f00;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ff0000;
+      animation: borderGlow 3s infinite;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 10px 0;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 1.1em;
+    }
+
+    .quote {
+      font-style: italic;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #f00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="Screenshot_20250610_201045.jpg" alt="Аватарка XIK">
+    <h1><a href="https://t.me/@XIK_OFFICIAL" target="_blank">@XIK_OFFICIAL</a></h1>
+    <p>Возраст: 15</p>
+    <p>Kasta: Koder</p>
+    <div class="quote">
+      <p>"Код — это оружие. Тот, кто им владеет, владеет миром."</p>
+      <p>"Хакеры не ломают — они создают возможности."</p>
+      <p>"Тишина командной строки — лучший звук для революции."</p>
+    </div>
+  </div>
+</body>
+</html>
